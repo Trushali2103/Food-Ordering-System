@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Food Ordering Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="tray.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Food Ordering Form</h1>
+    <form action="thankyou.html" method="get">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="food">Select Food:</label>
+        <select id="food" name="food" required>
+          <option value="">-- Select Food --</option>
+          <option value="Pasta">Pasta</option>
+          <option value="Dumpling">Dumpling</option>
+          <option value="Fried">Fried Rice</option>
+          <option value="Salad">Fruit Salad</option>
+          <option value="pizza">Pizza</option>
+          <option value="Biryani">Biryani</option>
+          <option value="spegtti">Spaghetti</option>
+          <option value=""></option>
+        </select>
+
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="specialRequest">Special Request (Optional):</label>
+        <textarea id="specialRequest" name="specialRequest" placeholder="Any special requests?" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          
+          <option value="">-- Select   
+ Payment Method --</option>
+          <option value="cash">Cash   
+ on Delivery</option>
+          <option value="upi">UPI</option>
+        </select>
+      </div>
+      <div class="form-group upi-field">
+        <label for="upi_id">UPI ID:</label>
+        <input type="text" id="upi_id" name="upi_id" placeholder="Enter your UPI ID">
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Submit Order</button>
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>

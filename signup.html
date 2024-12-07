@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="shortcut icon" href="tray.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signup-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .signup-form h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .signup-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #faad96;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .signup-form button:hover {
+            background-color: #f08d70;
+        }
+
+        .signup-form .icon {
+            position: absolute;
+            margin-left: -35px;
+            margin-top: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="signup-form">
+        <h2>Sign Up</h2>
+
+        <div style="position: relative;">
+            <input type="text" placeholder="Full Name" required>
+            <i class="bx bx-user icon"></i>
+        </div>
+
+        <div style="position: relative;">
+            <input type="email" placeholder="Email Address" required>
+            <i class="bx bx-envelope icon"></i>
+        </div>
+
+        <div style="position: relative;">
+            <input type="password" placeholder="Password" required>
+            <i class="bx bx-lock-alt icon"></i>
+        </div>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+</body>
+</html>

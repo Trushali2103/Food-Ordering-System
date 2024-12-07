@@ -1,0 +1,162 @@
+*,::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    margin:0 100px;
+    background-color: #ebdaa2;
+    background-image: url("background1.jpg");
+    background-size: 1700px;
+    
+}
+.nav{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 30px 0;
+}
+.nav .logo h1{
+    font-weight:600;
+    font-family:sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 40px;
+    
+}
+.nav .logo b{
+    color:orange
+}
+.nav ul{
+    display:flex;
+    list-style:none;
+}
+.nav ul li{
+    margin-right:30px;
+
+}
+.nav ul a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    font: weight 500px;
+    font-family:sans-serif;
+    font-size:17px;
+
+}
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+input{
+    padding:10px 20px;
+    cursor:pointer;
+    font-weight:600;
+}
+.Order{
+    background-color:#ffffff;
+    color:#ff511c;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+.SignUp{
+    background-color:#ff511c;
+    color:#ffffff;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+.category{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin: 100px;
+
+}
+.category .list-items h3{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+}
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.category .list-items h3{
+    font-family:cambria;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    
+}
+.category .card-list .card{
+    width : 200px;
+    height :auto;
+    display :block;
+    padding : 10px;
+    border-radius: 10px;
+    position :relative;
+    margin-bottom: 30px;
+    background-color : #ffffff;
+    outline : 2px solid #faad96;
+}
+.category .card-list .card img{
+    width: 100px;
+    height: auto;
+    bottom: 140px;
+    left: 50px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 10px 10px #faad96;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.category .card-list .food-title{
+    padding: 40px 0 10px;
+}
+.category .card-list .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  
+}
+.category .card-list .desc-food p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  
+}
+.content .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category .card .price span .plus-icon{
+    color: #ff511c;
+    font-size: 20px;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #ff511c;
+}

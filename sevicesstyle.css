@@ -1,0 +1,94 @@
+*,::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    margin:0 100px;
+    background-color: #ebdaa2;
+    background-image: url("background1.jpg");
+    background-size: 1700px;
+    
+}
+.nav{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 30px 0;
+}
+.nav .logo h1{
+    font-weight:600;
+    font-family:sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 40px;
+    
+}
+.nav .logo b{
+    color:orange
+}
+.nav ul{
+    display:flex;
+    list-style:none;
+}
+.nav ul li{
+    margin-right:30px;
+
+}
+.nav ul a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    font: weight 500px;
+    font-family:sans-serif;
+    font-size:17px;
+
+}
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+input{
+    padding:10px 20px;
+    cursor:pointer;
+    font-weight:600;
+}
+.Order{
+    background-color:#ffffff;
+    color:#ff511c;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+.SignUp{
+    background-color:#ff511c;
+    color:#ffffff;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+
+.container h1{
+    text-align: center;
+    color: #ffffff;
+
+  }
+  
+.service h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    font-style: sans serif;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  
+  .service p {
+    font-size: 20px;
+    color: #ffffff;
+    
+  }
